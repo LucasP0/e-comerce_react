@@ -4,8 +4,8 @@ export const Footer = () => {
   return (
     <footer className=''>
       <div className='flex flex-row items-start justify-center w-full text-sm text-white'>
-        <section className=' w-3/6 flex flex-row justify-end gap-14 border-r-2 border-search'>
-        <div className='ml-52 p-6 flex flex-col gap-14'>
+        <section className=' flex flex-row justify-end gap-14 border-r-2 border-search'>
+        <div className=' p-6 flex flex-col gap-14'>
           <div className='flex flex-col'>
             <p><strong>FORTE CELULARES - 41.468.809/0001-20</strong></p><br/>
             <p>Rua Vinte e um de Abril, 61, Centro,<br/>Marituba, PA, 67214-215</p>
@@ -19,8 +19,8 @@ export const Footer = () => {
         </div>
           </section>
           {/* section 2 */}
-        <section  className=' w-3/6 '> 
-        <div className='flex flex-col gap-10 w-2/4 p-4'>
+        <section  className='  '> 
+        <div className='flex flex-col gap-10 w-box p-4'>
           <p className='p-2'>Sobre Nós</p>
 
           A Forte Celulares foi fundada em fevereiro de 2020 como uma loja de celulares e acessórios, mas hoje estamos além de apenas uma loja de celulares. Decidimos aumentar nosso mix de produtos, investir em tecnologia e na capacitação dos nossos colaboradores para levar até você, de de maneira ainda mais simples, dinâmica e acessível todos os nossos produtos.

@@ -1,42 +1,43 @@
 import { Footer } from './components/Footer';
 import { Sidebar } from './components/sidebar';
+import { User, List } from 'lucide-react';
+
+
+
 
 export const App = () => {
 
   return (
     <div className='bg-pd  flex flex-col font-inter'>
       <Sidebar />
-      <div className='flex flex-auto justify-center'>
-        <main className='h-screen flex flex-row items-center justify-center gap-24 mb-mB text-white'>
-          <section className='flex flex-col items-center justify-between border-2 w-box h-boxl rounded-md border-ff p-14'>
-          <h2 className='text-center font-bold'>Já sou Cadastrado!</h2>
-              <div className='flex flex-col gap-6 '>
-                <div >
-                  <p className='pb-2'>Email</p>
-                  <input type="text" name="email"  className='w-inputmd rounded-md h-boxsx text-black p-2' />
-                </div>
-                <div>
-                  <p className='pb-2'>Senha</p>
-                  <input type="password" className='w-inputmd rounded-md h-boxsx name="senha" text-black p-2' />
-                </div>
-                <a href='#' className='text-right'>Esqueceu a sua senha ?</a>
-              </div>
-            <button className='w-boxmd h-boxsx bg-button rounded-md font-bold '>Entrar</button>
-          </section>
-          <section className='flex flex-col items-center justify-between border-2 w-box h-boxl rounded-md border-ff p-14'>
-          <h2 className='text-center font-bold'>Ainda não possui cadastro ?</h2>
-            <div className='text-center flex flex-col gap-1'>
-              <p>Primeiro acesso?</p>
-              <p>Faça seu cadastro aqui!</p>
+        <main className='h-screen text-white mb-mB'>
+          <div className=' flex flex-row items-start justify-center p-8 mt-28'>
+            <div>
+              <section className='flex flex-col items-start justify-center gap-6 p-10'>
+              <button className='w-boxmd h-boxsx  bg-button rounded-md font-bold flex flex-row justify-start items-center gap-2 p-2'><User /> Minha Conta</button>
+              <a className='p-2 border-t-2 w-full' href="#">Meus Pedidos</a>
+              <a className='p-2 border-t-2 w-full' href="#">Sair</a>
+              </section>
             </div>
-            <div >
-                  <p className='pb-2'>Email</p>
-                  <input type="text" name="email"  className='w-inputmd rounded-md h-boxsx text-black p-2' />
+            {/* INICIO SECTION TWO ^^ */}
+            <div>
+              <h1 className='text-xl font-bold p-1'>Minha Conta</h1>
+              <section className='border-2 border-white w-boxGG h-boxGG rounded-md flex flex-col items-start p-10 bg-ff'>
+                <h2 className='flex flex-row items-center gap-2 text-black'>
+                <List /> Dados Cadastrais
+                </h2>
+                  <div className='flex flex-col items-start p-7 mt-5 w-boxG rounded-md text-black bg-boxCin '>
+                    <h2>P</h2>
+                    <h2>P</h2>
+                    <h2>P</h2>
+                    <h2>P</h2>
+                    <h2>P</h2>
+
                 </div>
-           <button className='w-boxmd h-boxsx bg-button rounded-md font-bold '>Cadastrar</button>
-          </section>  
+                </section>
+            </div>
+          </div>
         </main>
-      </div>
       <Footer />
     </div>
   )

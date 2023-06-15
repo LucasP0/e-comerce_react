@@ -10,16 +10,15 @@ export const App = () => {
     <div className='bg-pd  flex flex-col font-inter'>
       <Sidebar />
       <main className='h-screen text-white mb-mB'>
-      <div className=' flex flex-row items-start justify-center p-8 mt-28'>
+      <div className=' flex flex-col  items-center justify-start  p-8 mt-20 w-full '>
             {/* INICIO SECTION TWO ^^ */}
-        <div>
-          <div className='flex flex-row items-baseline'>
+            <div className='flex flex-row items-baseline  w-4/5'>
             <h1 className='text-xl font-bold p-1 '>Carrinho</h1> <p className='font-light text-sm'>Clique em finalizar compra para efetuar o seu pedido</p>
           </div>
-          <section className='border-2 border-white w-boxGGG rounded-md flex flex-col justify-start  bg-ff text-black'>
+        <section className='border-2 border-white w-4/5 rounded-md flex flex-col justify-start  bg-ff text-black'>
           <div className='bg-bluzinho w-full flex flex-row items-center justify-between p-2'>
             <h2 className='px-9'>Produto</h2>
-            <div className='flex flex-row gap-40 px-20'>
+            <div className='flex flex-row gap-20 px-10 '>
               <p>Preço uniário</p>
               <p>Quantidade</p>
               <p>Subtotal</p>
@@ -35,7 +34,7 @@ export const App = () => {
                 <p><strong>Estoque:</strong> Disponivel</p>
               </div>
             </div>
-            <div className='flex flex-row mr-2 gap-40 px-20'>
+            <div className='flex flex-row mr-2 w gap-20 px-10'>
               <p><strong>R$8.900,00</strong></p>
               <p>TAMANHO</p>
               <p><strong>R$8.900,00</strong></p>
@@ -46,38 +45,64 @@ export const App = () => {
           <h1 className='text-xl font-bold p-1 '>Carrinho:</h1>
             <p className='text-xl'>R$8.900,00</p>
           </div>
+
           {/* NOVA SECTION */}
-          <div className='flex flex-row items-start justify-center w-full text-sm text-white'>
-        <section className=' flex flex-row justify-end gap-14 border-r-2 border-search'>
-        <div className=' p-6 flex flex-col gap-14'>
-          <div className='flex flex-col'>
-            <p><strong>FORTE CELULARES - 41.468.809/0001-20</strong></p><br/>
-            <p>Rua Vinte e um de Abril, 61, Centro,<br/>Marituba, PA, 67214-215</p>
+        <div className='flex flex-row items-start justify-center w-full text-sm text-black bg-bluzinho border-t-2 border-b-2
+        border-search/20 '>
+          <section className=' flex flex-row items-center justify-start border-search  w-full'>
+            <div className=' w-full  p-6 flex flex-col  '>
+              <div className='flex flex-col items-start'>
+                <h1 className='  text-xl font-bold p-1 '>Clacular Frete</h1>
+                <div className='flex flex-col items-center justify-center gap-4'>
+                  <div className='flex flex-row items-center px-10 pt-10 ml-40'>
+                    <input className='text-black h-10 placeholder-black border-search decoration-inherit rounded-l-md p-4 ' type="number" name="number" id="CEP" placeholder='CEP' />
+                    <button className='bg-button h-10 p-4 flex flex-row items-center rounded-r-md font-bold text-ff'>OK</button>
+                  </div>
+                  <h2 className='ml-40'>Não sabe seu CEP? <a className='list-' href="#"><strong>entre aqui</strong></a>
+                  </h2>
+                </div>
+              </div>
             </div>
-        </div>
-        <div className='pt-56 p-4 text-end flex flex-col gap-2'>
-          <p>Atendimento </p>
-          <p>(91)  98295-1232</p>
-          <p>Segunda à Sexta de 8:00-18:00</p>
-        </div>
           </section>
           {/* section 2 */}
-        <section  className='  '>
-        <div className='flex flex-col gap-10 w-box p-4'>
-          <p className='p-2'>Sobre Nós</p>
-
-          A Forte Celulares foi fundada em fevereiro de 2020 como uma loja de celulares e acessórios, mas hoje estamos além de apenas uma loja de celulares. Decidimos aumentar nosso mix de produtos, investir em tecnologia e na capacitação dos nossos colaboradores para levar até você, de de maneira ainda mais simples, dinâmica e acessível todos os nossos produtos.
-          Hoje contamos com experiência e conhecimento de causa para atender com propriedade toda região metropolitana de Belém, visando uma expansão territorial que irá, nos próximos 6 meses, além de das fronteiras do nosso estado.
-        </div>
-
-        </section>
-      </div>
-
+          <section  className='w-full border-l-2 border-search/20 '>
+            <div className='flex flex-col gap-10 p-6'>
+              <h1 className='  text-xl font-bold p-1 '>Tipos de Frete</h1>
+              <div className='flex flex-col items-start gap-2'>
+                <p className='flex flex-row items-center gap-2'>
+                  <input className='cursor-pointer' type="checkbox"  name="" id="" />
+                  Correios - R$ 25,00 - 25 dias
+                </p>
+                <p className='flex flex-row items-center gap-2'>
+                  <input type="checkbox" name="" id="" />
+                  Motoboy - R$25,00 - 25 dias
+                </p>
+                <p className='flex flex-row items-center gap-2'>
+                  <input type="checkbox" name="" id="" />
+                  Van - R$25,00 - 25 dias
+                </p>
+                <p className='flex flex-row items-center gap-2'>
+                  <input type="checkbox" name="" id="" />
+                  Transportadora - R$25,00 - 25 dias
+                </p>
+              </div>
+            </div>
           </section>
         </div>
+        <div className='bg-bluzinho flex flex-row items-center '>
+          <div className='flex flex-row items-center p-8 pt-10 ml-48'>
+            <input className='text-black h-10 w-56 placeholder-black border-search decoration-inherit rounded-l-md p-4' type="text" name="text" id="CUPOM" placeholder='Cupom de desconto' />
+            <button className='bg-button h-10 p-4 flex flex-row items-center rounded-r-md font-bold text-ff'>OK</button>
+          </div>
+        </div>
+        <div className='bg-ff w-full flex flex-row items-baseline gap-2 p-12 justify-end'>
+          <h1 className='text-xl font-bold p-1 '>Carrinho:</h1>
+            <p className='text-xl'>R$8.900,00</p>
+          </div>
+      </section>
       </div>
     </main>
-      <Footer />
-    </div>
+    <Footer />
+  </div>
   )
 };

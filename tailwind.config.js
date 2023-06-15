@@ -43,7 +43,7 @@ export default {
         boxel: '81.25rem',
         boxG: '57.5rem',
         boxGG: '62.5rem',
-        boxGG2: '90rem',
+        boxGG2: '20%',
         boxGGG: '100rem',
       },
       height: {

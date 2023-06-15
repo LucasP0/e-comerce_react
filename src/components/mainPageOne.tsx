@@ -1,7 +1,6 @@
 export const MainOne = () => {
   return (
-  <div className='flex flex-auto justify-center'>
-    <main className='h-screen flex flex-row items-center justify-center gap-24 mb-mB text-white'>
+    <main className='h-screen flex flex-row items-center justify-center gap-24 mb-mB text-white max-sm:flex-col max-sm:mt-20'>
       <section className='flex flex-col items-center justify-between border-2 w-box h-boxl rounded-md border-ff p-14'>
         <h2 className='text-center font-bold text-lg'>Já sou Cadastrado!</h2>
         <div className='flex flex-col gap-6'>
@@ -30,6 +29,6 @@ export const MainOne = () => {
           <button className='w-boxmd h-boxsx bg-button rounded-md font-bold '>Cadastrar</button>
       </section>
     </main>
-  </div>
+
   )
 }

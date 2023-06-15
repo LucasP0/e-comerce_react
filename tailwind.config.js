@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '640px',
+        'sm': '730px',
         // => @media (min-width: 640px) { ... }
 
         'md': '768px',
@@ -56,6 +56,7 @@ export default {
         mB: '50rem',
         mlg: '81.25rem',
         mxs: '4.688rem',
+        mbMax: '130rem',
       },
       fontFamily: {
         inter: ['inter , sans-serif'],

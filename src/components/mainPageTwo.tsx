@@ -2,11 +2,10 @@ import { UserPlus, FileSpreadsheet, BookPlus, MapPin } from 'lucide-react';
 
 export const MainPageTwo = () => {
   return (
-    <div className='flex justify-center   '>
-        <main className='h-screen mb-mlg  text-white '>
+        <main className='h-screen mb-mlg max-sm:mb-mbMax  text-white flex flex-col items-center  '>
           {/****** SEUS DADOS PARA ACESSO********* * */}
-          <div className='flex flex-col items-center justify-center w-boxel border-2 border-ff rounded-md  mt-24 p-8 mb-mlg '>
-            <div className='flex flex-row items-end  gap-28 '>
+          <div className='flex flex-col items-center justify-center w-4/5 border-2 border-ff rounded-md  mt-24 p-8 '>
+            <div className='flex flex-row items-end  gap-28 max-sm:flex-col'>
               <section className='flex flex-col gap-4'>
                 <h2 className='font-bold text-lg py-2 mt-8 flex flex-row items-center gap-4 '> <UserPlus /> Seus dados para acesso</h2>
                 <div >
@@ -44,7 +43,7 @@ export const MainPageTwo = () => {
               </section>
             </article>
             {/****** SECTION SEUS DADOS PESSOAIS ********* **/}
-            <div className='flex flex-row items-end  gap-28 '>
+            <div className='flex flex-row items-end  gap-28 max-sm:flex-col '>
               <section className='flex flex-col gap-4'>
                 <h2 className='font-bold text-lg py-2 mt-8 flex flex-row items-center gap-4 '> <BookPlus /> Dados Pessoais</h2>
                 <div >
@@ -61,7 +60,7 @@ export const MainPageTwo = () => {
                 </div>
               </section>
 
-              <section className='flex flex-col gap-4'>
+              <section className='flex flex-col gap-4 '>
                 <div >
                   <p className='pb-2 font-light text-sm'>CPF</p>
                   <input type="text" name="email"  className='w-inputmd rounded-md h-boxsx text-black p-2' />
@@ -77,7 +76,7 @@ export const MainPageTwo = () => {
               </section>
             </div>
             {/*********SECTION ENDEREÇO ******/}
-            <div className='flex flex-row items-end  gap-28 '>
+            <div className='flex flex-row items-end  gap-28 max-sm:flex-col'>
               <section className='flex flex-col gap-4'>
                 <h2 className='font-bold text-lg py-2 mt-8 flex flex-row items-center gap-4 '> <MapPin />Endereço </h2>
                 <div >
@@ -129,8 +128,6 @@ export const MainPageTwo = () => {
                   <a href="#" className='font-light text-sm'>Cancelar</a>
                 </div>
           </div>
-
         </main>
-      </div>
   )
 }

@@ -11,7 +11,7 @@ export const MainPageThee = () => {
             <div className='flex flex-row items-end  gap-28 '>
               <section className='flex flex-col gap-4'>
                 <h2 className='font-bold text-lg py-2 mt-8 flex flex-row items-center gap-4 '> <UserPlus /> Seus dados para acesso</h2>
-                <div >
+                <div>
                   <p className='pb-2 font-light text-sm'>Name</p>
                   <input type="text" name="email"  className='w-inputmd rounded-md h-boxsx text-black p-2' />
                 </div>

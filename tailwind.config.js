@@ -31,6 +31,7 @@ export default {
         button: '#0CD3D2',
         ff: '#FFFFFF',
         boxCin: '#D9D9D9',
+        bluzinho: '#EEE8E8',
       },
       width: {
         inputmd: '25rem',
@@ -42,6 +43,8 @@ export default {
         boxel: '81.25rem',
         boxG: '57.5rem',
         boxGG: '62.5rem',
+        boxGG2: '90rem',
+        boxGGG: '100rem',
       },
       height: {
         boxsx: '2.2rem',

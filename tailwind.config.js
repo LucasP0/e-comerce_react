@@ -14,7 +14,7 @@ export default {
         'md': '768px',
         // => @media (min-width: 768px) { ... }
 
-        'lg': '1200px',
+        'lg': '1300px',
         // => @media (min-width: 1024px) { ... }
 
         'xl': '1280px',
@@ -56,6 +56,7 @@ export default {
         mB: '50rem',
         mlg: '81.25rem',
         mxs: '4.688rem',
+        mblgg: '100rem',
         mbMax: '130rem',
       },
       fontFamily: {

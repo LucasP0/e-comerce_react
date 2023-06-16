@@ -51,6 +51,7 @@ export default {
         boximg: '9.375rem',
         boxl: '31.25rem',
         boxGG: '53.125rem',
+        boxGGG: '56rem',
       },
       margin: {
         mB: '50rem',

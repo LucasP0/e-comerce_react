@@ -14,8 +14,8 @@ export const MainPageFive = () => {
             {/* INICIO SECTION TWO ^^ */}
         <div className='max-lg:w-full '>
           <h1 className='text-xl font-bold p-1 max-md:flex max-md:flex-col max-lg:w-4/5 max-md:pl-12 max-md:pb-4'>Meus Pedidos</h1>
-          <section className='border-2 border-white w-boxGG  rounded-md flex flex-row justify-center p-10 bg-ff text-black max-lg:w-4/5 max-lg:m-auto'>
-          <h1 className='text-xl font-bold p-1'>Você ainda não efetuou nenhum pedido nesta Loja</h1>
+          <section className='border-2 border-white w-boxGG  rounded-md flex flex-row justify-center p-10 bg-ff text-black max-lg:w-full max-lg:m-auto '>
+          <h1 className='text-xl font-bold p-1 max-lg:text-sm'>Você ainda não efetuou nenhum pedido nesta Loja</h1>
           </section>
         </div>
       </div>

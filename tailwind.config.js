@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '730px',
+        'sm': '500px',
         // => @media (min-width: 640px) { ... }
 
-        'md': '768px',
+        'md': '1100px',
         // => @media (min-width: 768px) { ... }
 
         'lg': '1300px',

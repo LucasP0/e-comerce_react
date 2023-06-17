@@ -34,6 +34,8 @@ export default {
         bluzinho: '#EEE8E8',
         preço: '#0CD3D2',
         blackzinho: '#18181C',
+        bordinha: '#969696',
+        bg_clarinho: '#F3F2F2',
       },
       width: {
         inputmd: '25rem',
@@ -58,6 +60,7 @@ export default {
       },
       margin: {
         mB: '50rem',
+        md: '30rem',
         mlg: '81.25rem',
         mxs: '4.688rem',
         mblgg: '100rem',

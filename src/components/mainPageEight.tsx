@@ -1,4 +1,4 @@
-import { ChevronDown, Sparkle, Check, MoveLeft, MoveRight } from 'lucide-react';
+import { ChevronDown, Star, Check, MoveLeft, MoveRight } from 'lucide-react';
 
 export const MainPageEight = () => {
   return (
@@ -7,7 +7,7 @@ export const MainPageEight = () => {
             <div className=' max-lg:w-full flex flex-col max-sm:gap-10'>
               <section className='flex flex-col items-start justify-center  p-10 max-lg:p-0 max-lg:pb-4'>
               <div className='w-boxmd h-boxsx  bg-button rounded-md font-bold flex flex-row justify-between gap-2 p-2 max-lg:m-auto max-sm:w-full'>Apple <ChevronDown />
-               </div>
+              </div>
               <a className='p-2 border-b border-black bg-blackzinho w-full flex flex-row items-center gap-2' href="#">  Iphone 13</a>
               <a className='p-2 border-b border-black bg-blackzinho w-full flex flex-row items-center gap-2' href="#">  Air Pods</a>
               <a className='p-2 border-b border-black bg-blackzinho w-full flex flex-row items-center gap-2' href="#">  Iphone 14 PRO</a>
@@ -38,12 +38,12 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-center  w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
+                        <p className="flex flex-row items-start gap-2 w-3/4 ">
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
                         </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
@@ -55,12 +55,12 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
                         </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
@@ -72,13 +72,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -94,13 +94,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -111,13 +111,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -128,13 +128,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -149,13 +149,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -166,13 +166,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -183,13 +183,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -204,13 +204,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -221,13 +221,13 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start w-full gap-2 px-2 w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                        </p>
+                         <p className="flex flex-row items-start gap-2 w-3/4 ">
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                        <Star size={20} color="#65e70d" />
+                      </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>
                           <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
@@ -238,12 +238,12 @@ export const MainPageEight = () => {
                       <div className="flex flex-col gap-4 items-center h-30  text-lg p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full text-black">
                         <img className="" src="../public/img/image5.png" alt="" />
                         <h2 className="px-2"><strong>Iphone 13</strong></h2>
-                        <p className="flex flex-row items-start  w-3/4 ">
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
-                          <Sparkle size={20} color="#4d8e29" />
+                        <p className="flex flex-row items-start gap-2 w-3/4 ">
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
+                          <Star size={20} color="#65e70d" />
                         </p>
                         <div className="px-2 flex flex-col gap-2">
                           <p><strong>R$ 10.0000,00</strong></p>

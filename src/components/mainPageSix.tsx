@@ -49,7 +49,7 @@ export const MainPageSix = () => {
       border-search/20 max-lg:flex-col max-lg:items-center '>
         <section className=' flex flex-row items-center justify-start border-search  w-full'>
           <div className=' w-full  p-6 flex flex-col'>
-            <div className='flex flex-col items-start max-lg: items-center'>
+            <div className='flex flex-col items-start max-lg:items-center'>
               <h1 className='  text-xl font-bold p-1 '>Clacular Frete</h1>
               <div className='flex flex-col items-center justify-center gap-4'>
                 <div className='flex flex-row items-center px-10 pt-10 ml-40 max-lg:ml-0 '>

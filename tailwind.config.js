@@ -32,6 +32,8 @@ export default {
         ff: '#FFFFFF',
         boxCin: '#D9D9D9',
         bluzinho: '#EEE8E8',
+        preço: '#0CD3D2',
+        blackzinho: '#18181C',
       },
       width: {
         inputmd: '25rem',
@@ -52,6 +54,7 @@ export default {
         boxl: '31.25rem',
         boxGG: '53.125rem',
         boxGGG: '56rem',
+        boxGGGG: '200rem',
       },
       margin: {
         mB: '50rem',
@@ -62,7 +65,7 @@ export default {
       },
       fontFamily: {
         inter: ['inter , sans-serif'],
-      }
+      },
     },
 
   },

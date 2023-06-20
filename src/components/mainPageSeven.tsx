@@ -1,4 +1,7 @@
-import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ProductsDiv } from './productsDiv';
+import { products } from './products';
+
 
 export const MainPageSeven = () => {
   return (
@@ -17,78 +20,23 @@ export const MainPageSeven = () => {
       <h1 className="text-4xl font-bold text-white">Destaques</h1>
       <div className="flex flex-row">
         <div className="flex flex-row gap-6 w-full items-center justify-center max-sm:flex-col">
-        <ArrowLeft className="max-sm:opacity-0"  size={35}/>
-        <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/image5.png" alt="" />
-            <h2 className="px-2"><strong>IMotorola Boladão</strong>
-            </h2>
-           <p className="flex flex-row items-start gap-2 w-3/5 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 10.0000,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/produto2.png" alt="" />
-            <h2 className="px-2"><strong>Xiomi 12 Max - 500gb</strong></h2>
-           <p className="flex flex-row items-start gap-2 w-3/4 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 5.0020,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$416</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 5.0020,00</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/produto3.png" alt="" />
-            <h2 className="px-2"><strong>IMotorola Boladão</strong></h2>
-           <p className="flex flex-row items-start gap-2 w-3/4 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 3.0020,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$250</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 3.0020,00</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/memoria.png" alt="" />
-            <h2 className="px-2"><strong>Memoria Ram 128gb</strong></h2>
-           <p className="flex flex-row items-start gap-2 w-3/4 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 1.000,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$100</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 1.000,00</strong>
-              </p>
-            </div>
-          </div>
-
-
-          <ArrowRight className="max-sm:opacity-0"  size={35} color="#000000" />
+          <a href="#">
+            <ArrowLeft className="max-sm:opacity-0"  size={35}/>
+          </a>
+          {products && products.map((p, k) => {
+            return(
+              <ProductsDiv
+              name={p.name}
+              imgUrl={p.imgUrl}
+              description={p.description}
+              valor={p.valor}
+              key={k}
+              />
+            )
+          })}
+          <a href="#">
+            <ArrowRight className="max-sm:opacity-0"  size={35} color="#000000" />
+          </a>
         </div>
       </div>
 
@@ -101,77 +49,23 @@ export const MainPageSeven = () => {
       {/* PROMOÇÕES */}
       <div className="flex flex-row">
         <div className="flex flex-row gap-6 w-full items-center justify-center max-sm:flex-col">
-        <ArrowLeft className="max-sm:opacity-0"  size={35}/>
-        <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/image5.png" alt="" />
-            <h2 className="px-2"><strong>IMotorola Boladão</strong></h2>
-           <p className="flex flex-row items-start gap-2 w-3/4 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 10.0000,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/produto2.png" alt="" />
-            <h2 className="px-2"><strong>Xiomi 12 Max - 500gb</strong></h2>
-           <p className="flex flex-row items-start gap-2 w-3/4 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 5.0020,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$416</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 5.0020,00</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/produto3.png" alt="" />
-            <h2 className="px-2"><strong>IMotorola Boladão</strong></h2>
-           <p className="flex flex-row items-start gap-2 w-3/4 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 3.0020,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$250</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 3.0020,00</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4 items-center h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 w-1/4 max-sm:w-full">
-            <img className="" src="../public/img/memoria.png" alt="" />
-            <h2 className="px-2"><strong>Memoria Ram 128gb</strong></h2>
-           <p className="flex flex-row items-start gap-2 w-3/4 ">
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-            <Star size={20} color="#65e70d" />
-          </p>
-            <div className="px-2 flex flex-col gap-2">
-              <p><strong>R$ 1.000,00</strong></p>
-              <p>até <strong>12x</strong> de <strong>R$100</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 1.000,00</strong>
-              </p>
-            </div>
-          </div>
-
-
-          <ArrowRight className="max-sm:opacity-0"  size={35} color="#000000" />
+        <a href="#">
+          <ArrowLeft className="max-sm:opacity-0"  size={35}/>
+        </a>
+        {products && products.map((p, k) => {
+            return(
+              <ProductsDiv
+              name={p.name}
+              imgUrl={p.imgUrl}
+              description={p.description}
+              valor={p.valor}
+              key={k}
+              />
+            )
+          })}
+          <a href="#">
+            <ArrowRight className="max-sm:opacity-0"  size={35} color="#000000" />
+          </a>
         </div>
       </div>
 

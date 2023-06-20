@@ -1,12 +1,42 @@
+import { useState, useEffect, useRef } from 'react';
+
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { ProductsDiv } from './productsDiv';
 import { products } from './products';
 
 
+// importe de imagens:
+import img1 from '../../public/img/img-1.png';
+import img2 from '../../public/img/img-2.png'
+import img3 from '../../public/img/Inserir um título (4) 1.png'
+import { motion } from 'framer-motion';
+
+const images = [img1, img2, img3];
+
+
 export const MainPageSeven = () => {
+  const carousel = useRef()
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+  },[]);
+
   return (
     <main className="w-full mb-mB max-sm:mb-mB" >
-      <img className='w-full h' src="../../public/img/img-1.png" alt="" />
+      <div className='w-full flex'>
+        <motion.div ref={carousel} className='cursor-pointer
+        overflow-hidden'>
+          <motion.div className='flex' drag="x"
+          dragConstraints={{ right: 0, left: -width}}>
+            {images.map((item, k) => (
+              <motion.div className='min-w-full' key={k}>
+                <img className='w-full pointer-events-none' src={item} alt='Texto alt'/>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
+        </div>
       <div className='flex flex-row items-center justify-center p-4 gap-4'>
         <div className='rounded-full border-2 w-3 h-3'></div>
         <div className='rounded-full border-2 w-3 h-3 bg-button'></div>
@@ -40,7 +70,7 @@ export const MainPageSeven = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-row items-center justify-center gap-6 max-sm:flex-col">
+      <div className="w-full flex flex-row items-center justify-center gap-6 max-md:flex-col">
         <img src="../public/img/a.png" alt="" />
         <img src="../public/img/a (1).png" alt="" />
       </div>
@@ -69,7 +99,7 @@ export const MainPageSeven = () => {
         </div>
       </div>
 
-        <div className=" flex flex-row items-center justify-center w-3/5 max-sm:w-full">
+        <div className=" flex flex-row items-center justify-center  max-sm:w-full bg-black">
           <img className="w-full rounded-md  h-72 max-sm:h-36" src="../public/img/Inserir um título (4) 1.png" alt="" />
         </div>
     </section>

@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
 export const MainPageSeven = () => {
   return (
     <main className="w-full mb-mB max-sm:mb-mB" >
-      <img src="../../public/img/img-1.png" alt="" />
+      <img className='w-full h' src="../../public/img/img-1.png" alt="" />
       <div className='flex flex-row items-center justify-center p-4 gap-4'>
         <div className='rounded-full border-2 w-3 h-3'></div>
         <div className='rounded-full border-2 w-3 h-3 bg-button'></div>

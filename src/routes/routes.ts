@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import { PageEight } from "../../pages/pageEight";
-import { PageSeven } from "../../pages/pageSeven";
+import { PageEight } from "../pages/pageEight";
+import { PageSeven } from "../pages/pageSeven";
 
 export const router = createBrowserRouter([{
   path: '/',

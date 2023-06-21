@@ -1,6 +1,6 @@
 import { ChevronDown, Check, MoveLeft, MoveRight } from 'lucide-react';
-import { products } from './products';
-import { ProductsDiv } from './productsDiv';
+import { products } from '../components/pageSeven/products';
+import { ProductsDiv } from '../components/pageSeven/productsDiv';
 
 export const MainPageEight = () => {
   return (

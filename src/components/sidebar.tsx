@@ -5,7 +5,7 @@ export const Sidebar = () => {
     <header className='bg-white flex flex-col'>
           <nav className=' h-20 flex flex-row gap-7 items-center justify-between p-12 max-lg:w-full max-sm:flex-col max-lg:h-auto max-lg:py-2'>
             <div className='flex flex-row items-center gap-8 max-md:flex-col w-full '>
-              <img src="../public/img/LOGO_1080x1080 - VERSÃO HORIZONTAL 01 2.png" alt="logo" />
+              <img src="../img/LOGO_1080x1080 - VERSÃO HORIZONTAL 01 2.png" alt="logo" />
               <form className='bg-input w-inputl h-12 rounded-md p-3 flex flex-row max-lg:w-full'><input className='w-full  bg-input' type="search" name="search" placeholder='Faça sua pesquisa aqui' id="" />
               <button className='text-search'><Search /></button>
               </form>

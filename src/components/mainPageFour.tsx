@@ -3,7 +3,7 @@ import { User, List, MapPin, Users, LogOut } from 'lucide-react';
 
 export const MainPageFour = () => {
   return (
-    <main className='text-white mb-mB '>
+    <main className='text-white mb-5 '>
           <div className=' flex flex-row items-start justify-center p-8 mt-28 max-lg:flex-col w-full max-lg:p-0'>
             <div className=' max-lg:w-full'>
               <section className='flex flex-col items-start justify-center gap-6 p-10 max-lg:p-0 max-lg:pb-4'>

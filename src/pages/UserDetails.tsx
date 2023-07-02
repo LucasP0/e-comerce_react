@@ -1,15 +1,15 @@
 import { Footer } from "../components/Footer"
 import { BackgroundComponent } from "../components/background"
-import { MainPageThee } from "../components/mainPageThee"
+import { MainPageFour } from "../components/mainPageFour"
 import { Sidebar } from "../components/sidebar"
 
-export const PageThee = () => {
+export const UserDetailsPage = () => {
   return (
     <>
     <BackgroundComponent>
-      <Sidebar />
-      <MainPageThee />
-      <Footer />
+    <Sidebar />
+    <MainPageFour />
+    <Footer />
     </BackgroundComponent>
     </>
   )

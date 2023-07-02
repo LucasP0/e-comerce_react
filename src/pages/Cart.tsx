@@ -1,14 +1,14 @@
 import { Footer } from "../components/Footer"
 import { BackgroundComponent } from "../components/background"
-import { MainPageTwo } from "../components/mainPageTwo"
+import { MainPageSix } from "../components/mainPageSix"
 import { Sidebar } from "../components/sidebar"
 
-export const PageTwo = () => {
+export const CartPage = () => {
   return (
     <>
     <BackgroundComponent>
       <Sidebar />
-      <MainPageTwo />
+      <MainPageSix />
       <Footer />
     </BackgroundComponent>
     </>

@@ -1,14 +1,14 @@
-import { Footer } from "../components/Footer"
-import { BackgroundComponent } from "../components/background"
-import { MainPageSix } from "../components/mainPageSix"
 import { Sidebar } from "../components/sidebar"
+import { Footer } from "../components/Footer"
+import { MainOne } from "../components/mainPageOne"
+import { BackgroundComponent } from "../components/background"
 
-export const PageSix = () => {
+export const LoginPage = () => {
   return (
     <>
     <BackgroundComponent>
       <Sidebar />
-      <MainPageSix />
+      <MainOne />
       <Footer />
     </BackgroundComponent>
     </>

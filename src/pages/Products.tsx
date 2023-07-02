@@ -1,17 +1,16 @@
 import { Footer } from "../components/Footer";
 import { BackgroundComponent } from "../components/background";
-import { MainPageNine } from "../components/mainPageNine";
+import { MainPageEight } from "../components/mainPageEight";
 import { Sidebar } from "../components/sidebar";
 
-export const PageNine = () => {
+export const ProductsPage = () => {
   return (
     <>
-    <BackgroundComponent>
-      <Sidebar />
-      <MainPageNine />
+      <BackgroundComponent>
+      <Sidebar/>
+      <MainPageEight/>
       <Footer />
-    </BackgroundComponent>
+      </BackgroundComponent>
     </>
   );
-
 }

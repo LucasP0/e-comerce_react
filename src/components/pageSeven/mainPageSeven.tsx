@@ -7,7 +7,7 @@ import { DivCaroulsel } from './DivCaroulsel';
 
 export const MainPageSeven = () => {
   return (
-    <main className="w-full mb-mB max-sm:mb-mB" >
+    <main className="w-full mb-5 max-sm:mb-5" >
       {/* TENTANDO LLLLKKKKKKKKKKKKKKKKK */}
       <DivCaroulsel />
       {/* TENTANDO LLLLKKKKKKKKKKKKKKKKK */}
@@ -36,8 +36,8 @@ export const MainPageSeven = () => {
       </div>
 
       <div className="w-full flex flex-row items-center justify-center gap-6 max-md:flex-col">
-        <img src="../public/img/a.png" alt="" />
-        <img src="../public/img/a (1).png" alt="" />
+        <img src="../img/a.png" alt="" />
+        <img src="../img/a (1).png" alt="" />
       </div>
 
       <h1 className="text-4xl font-bold text-white">Promoções</h1>
@@ -65,7 +65,7 @@ export const MainPageSeven = () => {
       </div>
 
         <div className=" flex flex-row items-center justify-center  max-sm:w-full bg-black">
-          <img className="w-full rounded-md  h-72 max-sm:h-36" src="../public/img/Inserir um título (4) 1.png" alt="" />
+          <img className="w-full rounded-md  h-72 max-sm:h-36" src="../img/Inserir um título (4) 1.png" alt="" />
         </div>
     </section>
   </main>

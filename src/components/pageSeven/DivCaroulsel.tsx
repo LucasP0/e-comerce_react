@@ -5,13 +5,13 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 export const DivCaroulsel = () => {
   const slides = [
     {
-      url: '../../../public/img/img-1.png'
+      url: '../../../img/img-1.png'
     },
     {
-      url: '../../../public/img/img-2.png'
+      url: '../../../img/img-2.png'
     },
     {
-      url: '../../../public/img/controle.png.png'
+      url: '../../../img/controle.png.png'
     },
   ];
 

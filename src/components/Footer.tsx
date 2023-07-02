@@ -32,12 +32,12 @@ export const Footer = () => {
 
       <div className='p-14 ml-20 pt-36 pb-3 flex flex-row justify-between items-end max-sm:p-10 max-lg:ml-0 max-sm:flex-col max-sm:items-center'>
         <div>
-          <img src="../public/img/LOGO_1080x1080 - VERSÃO HORIZONTAL 02_SEM FUNDO 1.png" alt="" />
+          <img src="../img/LOGO_1080x1080 - VERSÃO HORIZONTAL 02_SEM FUNDO 1.png" alt="" />
           <p className='text-white text-xs max-w-xl pt-12 '> © ForteEletrôncios 2023 - Todos os direitos reservados. Eventuais promoções, descontos e prazos de pagamento expostos aqui são válidos  para compras via instagram, Site e Whatsapp </p>
           <p className='text-white text-xs pb-2' >Termos de uso e Política de Privacidade.</p>
         </div>
         <div className='flex flex-row items-center gap-2'>
-          <img src="../public/img/Shape.png" alt="logo_de_segurança" />
+          <img src="../img/Shape.png" alt="logo_de_segurança" />
         <p className='text-white text-xs'>
           COMPRA SEGURA <br/>
           <strong>SITE PROTEGIDO</strong><br/>

@@ -2,7 +2,7 @@ import { Plus, Minus, Trash2 } from 'lucide-react';
 
 export const MainPageSix = () => {
   return (
-    <main className='h-screen text-white mb-mB max-lg:mb-mblgg'>
+    <main className='h-screen text-white mb-5 max-lg:mb-mblgg'>
     <div className=' flex flex-col  items-center justify-start  p-8 mt-20 w-full max-lg:p-0 '>
           {/* INICIO SECTION TWO ^^ */}
           <div className='flex flex-row items-baseline  w-4/5'>
@@ -21,7 +21,7 @@ export const MainPageSix = () => {
         {/* SECTION 2 */}
         <div className='bg-ff w-full flex flex-row items-center justify-between p-2 max-lg:flex-col'>
         <div className='flex flex-row items-center gap-1 max-lg:flex-col '>
-          <img className='px-9 max-lg:px-0 ' src="../public/img/image 15.png" alt="" />
+          <img className='px-9 max-lg:px-0 ' src="../img/image 15.png" alt="" />
             <div className='max-lg:text-sm max-lg:text-center'>
               <p><strong>Apple iPhone 13 Pro Max -512 gb</strong></p>
               <p><strong>Estoque:</strong> Disponivel</p>

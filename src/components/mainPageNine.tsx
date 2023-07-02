@@ -2,14 +2,14 @@ import {  Star, ChevronDown } from 'lucide-react';
 
 export const MainPageNine = () => {
   return (
-    <main className="flex flex-col w-full items-center justify-center mt-24 mb-mB">
+    <main className="flex flex-col w-full items-center justify-center mt-24 mb-5">
     <div className="flex flex-row items-start justify-center w-4/5 bg-white p-20 gap-20 rounded-md max-md:flex-col max-sm:w-full ">
       <section className="flex flex-col items-center border-r-2 border-button/20">
-        <img src="../public/img/image 6.png" alt="" />
+        <img src="../img/image 6.png" alt="" />
         <div className="flex flex-row gap-8 items-center max-sm:grid max-sm:grid-cols-2">
-        <img src="../public/img/image 5.png" alt="" />
-        <img src="../public/img/image 13.png" alt="" />
-        <img src="../public/img/image 14.png" alt="" />
+        <img src="../img/image 5.png" alt="" />
+        <img src="../img/image 13.png" alt="" />
+        <img src="../img/image 14.png" alt="" />
         </div>
       </section>
       <section className="flex flex-col mt-14 items-start ">

@@ -1,8 +1,8 @@
 import { MoveLeft, MoveRight } from 'lucide-react';
-import { products } from '../components/pageSeven/products';
-import { ProductsDiv } from '../components/pageSeven/productsDiv';
+import { products } from './pageSeven/products';
+import { ProductsDiv } from './pageSeven/productsDiv';
 
-export const MainPageEight = () => {
+export const MainProductsPage= () => {
   return (
     <main className='text-white mb-5 max-sm:mt-2'>
       <div className=' flex flex-row items-start justify-center p-8 mt-10 max-md:flex-col w-full max-lg:p-0'>
@@ -36,10 +36,11 @@ export const MainPageEight = () => {
         {/* INICIO SECTION TWO ^^ */}
         <div className='flex flex-col max-lg:w-full max-lg:mt-12  w-3/5 gap-10 mt-10 max-sm:w-4/5 max-sm:m-auto'>
           <div className="flex flex-row text-black">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 px-6">
+            <div className="grid grid-cols-3 max-md2:grid-cols-2 gap-3 max-sm:grid-cols-1 place-items-center max-sm:mt-20 max-sm:w-full px-2">
               {products && products.map((p, k) => {
                 return (
                   <ProductsDiv
+                    link={p.url}
                     name={p.name}
                     imgUrl={p.imgUrl}
                     description={p.description}

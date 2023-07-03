@@ -1,6 +1,6 @@
 import { User, List, LogOut } from 'lucide-react';
 
-export const MainPageFive = () => {
+export const MainUserRequestsPage = () => {
   return (
     <main className='h-screen text-white mb-5'>
       <div className=' flex flex-row items-start justify-center p-8 mt-28 max-lg:flex-col max-lg:px-0 max-lg:w-full '>

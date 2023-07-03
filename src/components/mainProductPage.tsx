@@ -1,17 +1,13 @@
-import {  Star, ChevronDown } from 'lucide-react';
+import {  Star } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { CarouselProducId } from './carouselMainProductPage';
 
-export const MainPageNine = () => {
+export const MainProductPage= () => {
+
   return (
     <main className="flex flex-col w-full items-center justify-center mt-24 mb-5">
     <div className="flex flex-row items-start justify-center w-4/5 bg-white p-20 gap-20 rounded-md max-md:flex-col max-sm:w-full ">
-      <section className="flex flex-col items-center border-r-2 border-button/20">
-        <img src="../img/image 6.png" alt="" />
-        <div className="flex flex-row gap-8 items-center max-sm:grid max-sm:grid-cols-2">
-        <img src="../img/image 5.png" alt="" />
-        <img src="../img/image 13.png" alt="" />
-        <img src="../img/image 14.png" alt="" />
-        </div>
-      </section>
+      <CarouselProducId />
       <section className="flex flex-col mt-14 items-start ">
         <div className="flex flex-col items-start gap-2">
           <h1 className="text-xl"><strong>Apple iPhone 13 Por Max - 512 gb</strong></h1>
@@ -28,12 +24,17 @@ export const MainPageNine = () => {
             <p>até <strong>12x</strong> de <strong>R$833</strong> sem juros <br /> ou <strong className="text-preço text-xl">R$ 12.0020,00</strong>
             </p>
           </div>
-          <div className='w-boxmd h-boxsx  bg-ff rounded-md font-bold flex flex-row border-2 border-button/20 text-sm justify-between gap-2 p-2 max-lg:m-auto max-sm:w-full'>Selecionar a Cor <ChevronDown />
-          </div>
+          <form action="select" className="">
+            <select name="color" id="color" className="className= w-boxmd h-boxsx  bg-ff rounded-md font-bold flex flex-row border-2 border-button/20 text-sm justify-between gap-2 p-2 max-lg:m-auto max-sm:w-full text-start ">
+              <option value="black">Black</option>
+              <option value="White">White</option>
+              <option value="Purple">Purple</option>
+            </select>
+          </form>
           <p><strong>Estoque:</strong>disponível</p>
-          <button className='w-boxmd h-boxsx  bg-preço rounded-md font-bold flex flex-row border-2 border-button/20 text-white text-sm items-center justify-center  max-lg:m-auto max-sm:w-full'>Comprar
+          <button className='w-boxmd h-boxsx  bg-preço rounded-md font-bold flex flex-row border-2 border-button/40 text-white text-sm items-center justify-center  max-lg:m-auto max-sm:w-full'>Comprar
           </button>
-          <button className='w-boxmd h-boxsx  bg-ff rounded-md font-bold flex flex-row border-2 border-button/20 text-preço text-sm items-center justify-center  max-lg:m-auto max-sm:w-full'>Adicionar ao Carrinho
+          <button className='w-boxmd h-boxsx  bg-ff rounded-md font-bold flex flex-row border-2 border-button/40 text-preço text-sm items-center justify-center  max-lg:m-auto max-sm:w-full'>Adicionar ao Carrinho
           </button>
         </div>
       </section>

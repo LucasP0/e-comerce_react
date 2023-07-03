@@ -1,5 +1,5 @@
 import { UserPlus, Smartphone, Plus } from 'lucide-react';
-export const MainPageThee = () => {
+export const MainSellOldPage = () => {
   return (
         <main className='flex flex-col items-center   h-screen mb-mlg max-lg:mb-mbMax text-white  '>
         <div className='flex flex-col items-start justify-start mt-20'>

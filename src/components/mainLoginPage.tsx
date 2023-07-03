@@ -1,4 +1,4 @@
-export const MainOne = () => {
+export const MainLoginPage = () => {
   return (
     <main className='h-screen flex flex-row items-center justify-center gap-24 mb-5 text-white max-sm:flex-col max-sm:mt-20'>
       <section className='flex flex-col items-center justify-between border-2 w-box h-boxl rounded-md border-ff p-14 max-lg:w-full'>

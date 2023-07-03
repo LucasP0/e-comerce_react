@@ -1,8 +1,8 @@
 import { Plus, Minus, Trash2 } from 'lucide-react';
 
-export const MainPageSix = () => {
+export const MainCart = () => {
   return (
-    <main className='h-screen text-white mb-5 max-lg:mb-mblgg'>
+    <main className='h-screen text-white mb-md max-lg:mb-mblgg'>
     <div className=' flex flex-col  items-center justify-start  p-8 mt-20 w-full max-lg:p-0 '>
           {/* INICIO SECTION TWO ^^ */}
           <div className='flex flex-row items-baseline  w-4/5'>

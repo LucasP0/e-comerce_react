@@ -1,23 +1,23 @@
 
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { ProductsDiv } from './productsDiv';
-import { products } from './products';
+import { products, promocoes } from './products';
 import { DivCaroulsel } from './DivCaroulsel';
 
 
 
-export const MainPageSeven = () => {
+export const MainHomePage = () => {
 const scrollLeft = () => {
-  document.getElementById('content').scrollLeft -= 1000;
+  document.getElementById('content').scrollLeft -= 1300;
 }
 const scrollRight = () => {
-  document.getElementById('content').scrollLeft += 1000;
+  document.getElementById('content').scrollLeft += 1300;
 }
 const scrollLeft2 = () => {
-  document.getElementById('content2').scrollLeft -= 1000;
+  document.getElementById('content2').scrollLeft -= 1300;
 }
 const scrollRight2 = () => {
-  document.getElementById('content2').scrollLeft += 1000;
+  document.getElementById('content2').scrollLeft += 1300;
 }
   return (
     <main className="w-full mb-5 max-sm:mb-5" >
@@ -26,9 +26,9 @@ const scrollRight2 = () => {
       {/* TENTANDO LLLLKKKKKKKKKKKKKKKKK */}
     <section className="w-full flex flex-col items-center justify-start mt-16 p-16 gap-36">
       <h1 className="text-4xl font-bold text-white">Destaques</h1>
-        <div className="w-full flex flex-row items-center justify-center gap-10 max-sm:gap-0">
+        <div className="w-full flex flex-row items-center justify-center gap-6 max-sm:gap-0">
         <button className="max-sm:hidden" onClick={scrollLeft}><ArrowLeft size={30} /></button>
-          <div id="content" className="carousel p-4 flex max-w-[1300px] gap-10 items-center justify-start relative overflow-x-auto scroll-smooth w-full scrollbar-hide max-md2:w-[980px]">
+          <div id="content" className="carousel p-4 flex  gap-10 justify-start relative overflow-x-auto scroll-smooth  scrollbar-hide max-md2:w-[980px]">
             {products && products.map((p, k,) => {
               return(
                   <ProductsDiv
@@ -54,8 +54,8 @@ const scrollRight2 = () => {
       {/* PROMOÇÕES */}
       <div className="w-full flex flex-row items-center justify-center gap-10 max-sm:gap-0">
         <button className="max-sm:hidden" onClick={scrollLeft2}><ArrowLeft size={30} /></button>
-          <div id="content2" className="carousel p-4 flex max-w-[1300px] gap-10 items-center justify-start relative overflow-x-auto scroll-smooth w-full scrollbar-hide max-md2:w-[980px]">
-            {products && products.map((p, k,) => {
+          <div id="content2" className="carousel p-4 flex max-w-[1300px] gap-8 items-center justify-start relative overflow-x-auto scroll-smooth w-full scrollbar-hide max-md2:w-[980px]">
+            {promocoes  && promocoes.map((p, k,) => {
               return(
                   <ProductsDiv
                   link={p.url}

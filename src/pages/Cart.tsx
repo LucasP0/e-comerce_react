@@ -1,6 +1,6 @@
 import { Footer } from "../components/Footer"
 import { BackgroundComponent } from "../components/background"
-import { MainPageSix } from "../components/mainPageSix"
+import { MainCart } from "../components/mainCart"
 import { Sidebar } from "../components/sidebar"
 
 export const CartPage = () => {
@@ -8,7 +8,7 @@ export const CartPage = () => {
     <>
     <BackgroundComponent>
       <Sidebar />
-      <MainPageSix />
+      <MainCart />
       <Footer />
     </BackgroundComponent>
     </>

@@ -1,6 +1,6 @@
 import { UserPlus, FileSpreadsheet, BookPlus, MapPin } from 'lucide-react';
 
-export const MainPageTwo = () => {
+export const MainRegisterPage= () => {
   return (
         <main className='h-screen mb-mlg max-lg:mb-mbMax  text-white flex flex-col items-center  '>
           {/****** SEUS DADOS PARA ACESSO********* * */}

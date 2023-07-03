@@ -5,7 +5,20 @@ import { products } from './products';
 import { DivCaroulsel } from './DivCaroulsel';
 
 
+
 export const MainPageSeven = () => {
+const scrollLeft = () => {
+  document.getElementById('content').scrollLeft -= 1000;
+}
+const scrollRight = () => {
+  document.getElementById('content').scrollLeft += 1000;
+}
+const scrollLeft2 = () => {
+  document.getElementById('content2').scrollLeft -= 1000;
+}
+const scrollRight2 = () => {
+  document.getElementById('content2').scrollLeft += 1000;
+}
   return (
     <main className="w-full mb-5 max-sm:mb-5" >
       {/* TENTANDO LLLLKKKKKKKKKKKKKKKKK */}
@@ -13,27 +26,24 @@ export const MainPageSeven = () => {
       {/* TENTANDO LLLLKKKKKKKKKKKKKKKKK */}
     <section className="w-full flex flex-col items-center justify-start mt-16 p-16 gap-36">
       <h1 className="text-4xl font-bold text-white">Destaques</h1>
-      <div className="flex flex-row">
-        <div className="flex flex-row gap-6 w-full items-center justify-center max-sm:flex-col">
-          <a href="#">
-            <ArrowLeft className="max-sm:opacity-0"  size={35}/>
-          </a>
-          {products && products.map((p, k) => {
-            return(
-              <ProductsDiv
-              name={p.name}
-              imgUrl={p.imgUrl}
-              description={p.description}
-              valor={p.valor}
-              key={k}
-              />
-            )
-          })}
-          <a href="#">
-            <ArrowRight className="max-sm:opacity-0"  size={35} color="#000000" />
-          </a>
+        <div className="w-full flex flex-row items-center justify-center gap-10 max-sm:gap-0">
+        <button className="max-sm:hidden" onClick={scrollLeft}><ArrowLeft size={30} /></button>
+          <div id="content" className="carousel p-4 flex max-w-[1300px] gap-10 items-center justify-start relative overflow-x-auto scroll-smooth w-full scrollbar-hide max-md2:w-[980px]">
+            {products && products.map((p, k,) => {
+              return(
+                  <ProductsDiv
+                  link={p.url}
+                  name={p.name}
+                  imgUrl={p.imgUrl}
+                  description={p.description}
+                  valor={p.valor}
+                  key={k}
+                  />
+              )
+            })}
+          </div>
+          <button className="max-sm:hidden" onClick={scrollRight}><ArrowRight size={30} /></button>
         </div>
-      </div>
 
       <div className="w-full flex flex-row items-center justify-center gap-6 max-md:flex-col">
         <img src="../img/a.png" alt="" />
@@ -42,27 +52,25 @@ export const MainPageSeven = () => {
 
       <h1 className="text-4xl font-bold text-white">Promoções</h1>
       {/* PROMOÇÕES */}
-      <div className="flex flex-row">
-        <div className="flex flex-row gap-6 w-full items-center justify-center max-sm:flex-col">
-        <a href="#">
-          <ArrowLeft className="max-sm:opacity-0"  size={35}/>
-        </a>
-        {products && products.map((p, k) => {
-            return(
-              <ProductsDiv
-              name={p.name}
-              imgUrl={p.imgUrl}
-              description={p.description}
-              valor={p.valor}
-              key={k}
-              />
-            )
-          })}
-          <a href="#">
-            <ArrowRight className="max-sm:opacity-0"  size={35} color="#000000" />
-          </a>
+      <div className="w-full flex flex-row items-center justify-center gap-10 max-sm:gap-0">
+        <button className="max-sm:hidden" onClick={scrollLeft2}><ArrowLeft size={30} /></button>
+          <div id="content2" className="carousel p-4 flex max-w-[1300px] gap-10 items-center justify-start relative overflow-x-auto scroll-smooth w-full scrollbar-hide max-md2:w-[980px]">
+            {products && products.map((p, k,) => {
+              return(
+                  <ProductsDiv
+                  link={p.url}
+                  name={p.name}
+                  imgUrl={p.imgUrl}
+                  description={p.description}
+                  valor={p.valor}
+                  key={k}
+                  />
+              )
+            })}
+          </div>
+          <button className="max-sm:hidden" onClick={scrollRight2}><ArrowRight size={30} /></button>
         </div>
-      </div>
+
 
         <div className=" flex flex-row items-center justify-center  max-sm:w-full bg-black">
           <img className="w-full rounded-md  h-72 max-sm:h-36" src="../img/Inserir um título (4) 1.png" alt="" />

@@ -13,7 +13,8 @@ export default {
 
         'md': '1100px',
         // => @media (min-width: 768px) { ... }
-
+        'md2': '1400px',
+        
         'lg': '1300px',
         // => @media (min-width: 1024px) { ... }
 

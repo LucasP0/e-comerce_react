@@ -21,9 +21,7 @@ const scrollRight2 = () => {
 }
   return (
     <main className="w-full mb-5 max-sm:mb-5" >
-      {/* TENTANDO LLLLKKKKKKKKKKKKKKKKK */}
       <DivCaroulsel />
-      {/* TENTANDO LLLLKKKKKKKKKKKKKKKKK */}
     <section className="w-full flex flex-col items-center justify-start mt-16 p-16 gap-36">
       <h1 className="text-4xl font-bold text-white">Destaques</h1>
         <div className="w-full flex flex-row items-center justify-center gap-6 max-sm:gap-0">

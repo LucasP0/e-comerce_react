@@ -9,7 +9,7 @@ interface props {
 export const ProductsDiv = ({ valor, description, imgUrl, name, link }: props) => {
   return (
      <a target={"_blank"} href={link} className="">
-       <div className="flex flex-col gap-4 items-center w-72 h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 max-sm:w-[200px] ">
+       <div className="flex flex-col gap-4 items-center w-72 h-30  text-sm p-6 rounded-md bg-gradient-to-t from-ff via-ff to-white/70 max-sm:w-[300px] ">
           <img className="object-cover" src={imgUrl} alt="" />
           <h2 className="px-2"><strong>{name}</strong>
           </h2>

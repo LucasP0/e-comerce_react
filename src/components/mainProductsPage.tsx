@@ -1,27 +1,26 @@
-import { MoveLeft, MoveRight } from 'lucide-react';
 import { products } from './pageSeven/products';
 import { ProductsDiv } from './pageSeven/productsDiv';
 
 export const MainProductsPage= () => {
   return (
-    <main className='text-white mb-5 max-sm:mt-2'>
-      <div className=' flex flex-row items-start justify-center p-8 mt-10 max-md:flex-col w-full max-lg:p-0'>
-        <div className=' max-lg:w-full flex flex-col max-sm:gap-10'>
+    <main className='text-white mb-5 max-sm:mt-2 w-ful'>
+      <div className=' flex flex-row items-start mb-mB justify-center p-8 mt-10 max-md:flex-col w-full max-lg:p-0'>
+        <div className='flex flex-col max-sm:gap-10'>
           <section className='flex flex-col items-start justify-center  p-10 max-lg:p-0 max-lg:pb-4'>
-            <select className='w-boxmd bg-button rounded-md font-bold gap-2 p-4 max-lg:m-auto max-sm:w-full'>
-              <option selected >Iphone 13</option>
-              <option>Air Pods</option>
-              <option>Iphone 14 PRO</option>
-              <option>IPAD</option>
+            <select className='w-boxmd bg-button/40 rounded-md font-bold gap-2 p-4 max-lg:m-auto max-sm:w-full'>
+              <option className='text-black' selected >Iphone 13</option>
+              <option className='text-black'>Air Pods</option>
+              <option className='text-black'>Iphone 14 PRO</option>
+              <option className='text-black'>IPAD</option>
             </select>
           </section>
 
           <section className='flex flex-col items-start justify-center  p-10 max-lg:p-0 max-lg:pb-4'>
-            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço' href="#">XIAOMI</a>
-            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço' href="#">REALME</a>
-            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço' href="#">MOTOROLA</a>
-            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço' href="#">APPLE</a>
-            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço' href="#">USADOS</a>
+            <a className='p-2 border-b-2 w-full flex  flex-row items-center gap-2 hover:bg-preço hover:text-black' href="#">XIAOMI</a>
+            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço hover:text-black' href="#">REALME</a>
+            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço hover:text-black' href="#">MOTOROLA</a>
+            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço hover:text-black' href="#">APPLE</a>
+            <a className='p-2 border-b-2 w-full flex flex-row items-center gap-2 hover:bg-preço hover:text-black' href="#">USADOS</a>
           </section>
 
           {/*<section className='flex flex-col items-start justify-center  p-10 max-lg:p-0 max-lg:pb-4'>
@@ -34,9 +33,10 @@ export const MainProductsPage= () => {
         </div>
 
         {/* INICIO SECTION TWO ^^ */}
-        <div className='flex flex-col max-lg:w-full max-lg:mt-12  w-3/5 gap-10 mt-10 max-sm:w-4/5 max-sm:m-auto'>
+        <div className='flex flex-col max-2xl:w-full  max-lg:mt-12  w-3/5 gap-10 mt-10 max-sm:w-full max-sm:m-aut'>
           <div className="flex flex-row text-black">
-            <div className="grid grid-cols-3 max-md2:grid-cols-2 gap-3 max-sm:grid-cols-1 place-items-center max-sm:mt-20 max-sm:w-full px-2">
+            <div className="grid grid-cols-3  gap-3 max-sm2:grid-cols-2 max-sm:grid-cols-1 place-items-center max-sm:mt-20
+            max-xl: overflow-x-auto h-[1100px] max-md2:w-full">
               {products && products.map((p, k) => {
                 return (
                   <ProductsDiv
@@ -50,20 +50,6 @@ export const MainProductsPage= () => {
                 )
               })}
             </div>
-          </div>
-          <div className="w-4/5 flex flex-row items-center justify-center m-auto gap-10 max-sm:gap-5">
-            <a href="">
-              <MoveLeft size={40} />
-            </a>
-            <div className="w-10 h-10 border-2 rounded-full flex flex-row justify-center items-center bg-button/20">1</div>
-            <div className="w-10 h-10 border-2 rounded-full flex flex-row justify-center items-center">2</div>
-            <div className="w-10 h-10 border-2 rounded-full flex flex-row justify-center items-center">3</div>
-            <div className="w-10 h-10 border-2 rounded-full flex flex-row justify-center items-center">4</div>
-            <div className="w-10 h-10 border-2 rounded-full flex flex-row justify-center items-center">5</div>
-            <div className="w-10 h-10 border-2 rounded-full flex flex-row justify-center items-center">6</div>
-            <a href="">
-              <MoveRight size={40} />
-            </a>
           </div>
         </div>
       </div>

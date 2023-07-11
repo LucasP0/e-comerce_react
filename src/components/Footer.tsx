@@ -2,7 +2,7 @@ import { Facebook, Instagram, Smartphone  } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className='max-md:flex max-md:flex-col max-md:items-center'>
+    <footer className='max-md:flex max-md:flex-col max-md:items-center '>
       <div className='flex flex-row items-start justify-center w-full text-sm text-white max-md:flex-col max-md:items-center'>
         <section className=' flex flex-row justify-end gap-14 border-r-2 border-search max-md:flex-col max-md:gap-2 max-lg:border-none'>
         <div className=' p-6 flex flex-col gap-14'>

@@ -8,17 +8,17 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '500px',
+        'sm': '600px',
         // => @media (min-width: 640px) { ... }
-
+        'sm2': '850px',
         'md': '1100px',
         // => @media (min-width: 768px) { ... }
         'md2': '1400px',
-        
+
         'lg': '1300px',
         // => @media (min-width: 1024px) { ... }
 
-        'xl': '1280px',
+        'xl': '1380px',
         // => @media (min-width: 1280px) { ... }
 
         '2xl': '1536px',

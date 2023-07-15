@@ -3,8 +3,8 @@ import { ProductsDiv } from './pageSeven/productsDiv';
 
 export const MainProductsPage= () => {
   return (
-    <main className='text-white mb-5 max-sm:mt-2 w-ful'>
-      <div className=' flex flex-row items-start mb-mB justify-center p-8 mt-10 max-md:flex-col w-full max-lg:p-0'>
+    <main className='text-white mb-32 max-sm:mt-2 w-ful'>
+      <div className=' flex flex-row items-start  justify-center p-6 mt-10 max-md:flex-col w-full max-lg:p-0'>
         <div className='flex flex-col max-sm:gap-10'>
           <section className='flex flex-col items-start justify-center  p-10 max-lg:p-0 max-lg:pb-4'>
             <select className='w-boxmd bg-button/40 rounded-md font-bold gap-2 p-4 max-lg:m-auto max-sm:w-full'>

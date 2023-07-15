@@ -1,7 +1,7 @@
 import { Footer } from "../components/Footer"
 import { BackgroundComponent } from "../components/background"
 import { MainSellOldPage } from "../components/mainSellOldPage"
-import { Sidebar } from "../components/sidebar"
+import { Sidebar } from "../components/SideBar/sidebar"
 
 export const SellOldPage = () => {
   return (

@@ -7,7 +7,6 @@ export const Nav = () => {
   // função de search:
   const handleSearch = (event: any) => {
     event.preventDefault();
-    console.log('FUNFOU BUCETINHA')
   }
   return (
     <nav className=' h-20 flex flex-row gap-7 items-center justify-between p-12 max-lg:w-full max-sm:flex-col max-lg:h-auto max-lg:py-2'>

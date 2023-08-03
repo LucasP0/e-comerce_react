@@ -1,40 +1,57 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { HomePage } from "../pages/Home";
-import { ProductsPage } from "../pages/Products";
-import { UserRequestsPage } from "../pages/UserRequests";
-import { UserDetailsPage } from "../pages/UserDetails";
-import { RegisterPage } from "../pages/Register";
-import { ProductPage } from "../pages/Product";
-import { LoginPage } from "../pages/Login";
-import { CartPage } from "../pages/Cart";
-import { SellOldPage } from "../pages/SellOld";
+
+import { App } from "../App";
+import { MainProductPage } from "../components/mainProductPage";
+import { MainLoginPage } from "../components/mainLoginPage";
+import { MainRegisterPage } from "../components/mainRegisterPage";
+import { MainCart } from "../components/mainCart";
+import { MainUserRequestsPage } from "../components/mainUserRequestsPage";
+import { MainUserDetailsPage } from "../components/mainUserDetailsPage";
+import { MainSellOldPage } from "../components/mainSellOldPage";
+import { MainHomePage } from "../components/pageSeven/mainHomePage";
+import { MainProductsPage } from "../components/mainProductsPage";
+
 
 export const router = createBrowserRouter([{
   path: '/',
-  element: HomePage()
-}, {
-  path: 'products',
-  element: ProductsPage()
-}, {
-  path: 'register',
-  element: RegisterPage()
-}, {
-  path: 'login',
-  element: LoginPage()
-}, {
-  path: 'product/:id',
-  element: ProductPage()
-},{
-  path: 'cart',
-  element: CartPage()
-},{
-  path: 'user/requests',
-  element: UserRequestsPage()
-},{
-  path: 'user/details',
-  element: UserDetailsPage()
-},{
-  path: 'user/sell-old',
-  element: SellOldPage()
+  element: App(),
+  children: [
+   {
+    path: '/',
+    element: MainHomePage()
+    },
+    , {
+      path: '/products',
+      element: MainProductsPage()
+    },
+    {
+      path: '/login',
+      element: MainLoginPage()
+    },
+    {
+      path: '/register',
+      element: MainRegisterPage()
+    },
+    {
+      path: '/product/:id',
+      element: MainProductPage()
+    },
+    {
+      path: '/cart',
+      element: MainCart()
+    },
+    {
+      path: '/user/requests',
+      element: MainUserRequestsPage()
+    },
+    {
+      path: '/user/details',
+      element: MainUserDetailsPage()
+    },
+    , {
+      path: '/user/sell-old',
+      element: MainSellOldPage()
+    }
+  ]
 }])

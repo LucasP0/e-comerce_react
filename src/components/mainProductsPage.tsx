@@ -1,5 +1,5 @@
-import { products } from './pageSeven/products';
-import { ProductsDiv } from './pageSeven/productsDiv';
+import { products } from './homePage/products';
+import { ProductsDiv } from './homePage/productsDiv';
 
 export const MainProductsPage= () => {
   return (

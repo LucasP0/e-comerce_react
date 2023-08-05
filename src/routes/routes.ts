@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom';
 
 
 import { App } from "../App";
@@ -9,8 +9,9 @@ import { MainCart } from "../components/mainCart";
 import { MainUserRequestsPage } from "../components/mainUserRequestsPage";
 import { MainUserDetailsPage } from "../components/mainUserDetailsPage";
 import { MainSellOldPage } from "../components/mainSellOldPage";
-import { MainHomePage } from "../components/pageSeven/mainHomePage";
+import { MainHomePage } from "../components/homePage/mainHomePage";
 import { MainProductsPage } from "../components/mainProductsPage";
+import { Mim } from '../components/homePage/min';
 
 
 export const router = createBrowserRouter([{

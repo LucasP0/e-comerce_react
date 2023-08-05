@@ -3,6 +3,9 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { ProductsDiv } from './productsDiv';
 import { products, promocoes } from './products';
 import { DivCaroulsel } from './DivCaroulsel';
+import { useState } from 'react';
+import { FetchApi, MapProducts } from './FetchApi';
+import Fetch from '../../axios/config';
 
 
 
@@ -28,18 +31,7 @@ const scrollRight2 = () => {
           <div className="w-full flex flex-row  items-center justify-center gap-6 max-sm:gap-0 max-sm:w-[320px] ">
           <button className="max-sm:hidden" onClick={scrollLeft}><ArrowLeft size={30} /></button>
             <div id="content" className="carousel p-4 flex  gap-10 justify-start relative overflow-x-auto scroll-smooth  scrollbar-hide max-md2:w-[980px]">
-              {products && products.map((p, k,) => {
-                return(
-                    <ProductsDiv
-                    link={p.url}
-                    name={p.name}
-                    imgUrl={p.imgUrl}
-                    description={p.description}
-                    valor={p.valor}
-                    key={k}
-                    />
-                )
-              })}
+            <FetchApi />
             </div>
             <button className="max-sm:hidden" onClick={scrollRight}><ArrowRight size={30} /></button>
           </div>

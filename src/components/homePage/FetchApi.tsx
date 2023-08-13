@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Fetch from "../../axios/config";
-import axios from "axios";
 import { ProductsDiv } from "./productsDiv";
 import img  from '../../../public/img/produto3.png';
+import { AppContext } from "../../context/AppContext";
 
 interface IProps {
   attributes: any;
@@ -12,21 +12,21 @@ interface IProps {
   descricao: string;
 }
 export const FetchApi = () => {
-  const [ok, setOk] = useState<IProps[]>([]);
+  const {products, setProducts } = useContext<any>(AppContext);
   useEffect(() => {
       Fetch
       .get('products')
       .then((res) => {
-        console.log(res.data);
-        setOk(res.data.data)
+        console.log(res.data.data);
+        setProducts(res.data.data)
       })
       .catch((err) => console.log(err));
   }, [])
   return (
     <div className="flex flex-row gap-4">
-      {ok.map((item) => (
+      {products.map((item) => (
         <ProductsDiv
-        id={item.attributes.id}
+        id={item.id}
         imgUrl={img}
         name={item.attributes.nome}
         valor={item.attributes.preco}

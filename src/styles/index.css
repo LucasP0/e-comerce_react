@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar #content {
-  display: none;
+.cart--active {
+  opacity: 1;
 }
